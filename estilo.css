@@ -1,0 +1,59 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    background-color:rgb(39, 50, 100);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculadora{
+    display: grid;
+}
+.superior{
+    color: aliceblue;
+}
+.numero{
+    padding: 20px;
+    color: aliceblue;
+    text-align: end;
+    margin-bottom: 20px;
+    background-color: rgb(13, 20, 49);
+    border-radius: 10px;
+}
+.teclas{
+    background-color: rgb(13, 20, 49);
+    padding: 10px 20px 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows: repeat(5,60px);
+    border-radius: 10px;
+}
+.teclas button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: aliceblue ;
+}
+.teclas .del{
+    color: aliceblue;
+    background-color: rgb(44, 58, 121);
+
+}
+.teclas .ultima{
+    grid-column: span 2;
+    color: aliceblue;
+    background-color: rgb(44, 58, 121);
+}
+.teclas .ultimo{
+    grid-column: span 2;
+    color: aliceblue;
+    background-color: red;
+}
